@@ -27,7 +27,7 @@ display: block;
 width: inherit;
 background-color: #461919;
 }
-navigation{
+navigation ul {
     width: 100%;
     display: grid;
 }

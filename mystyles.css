@@ -24,8 +24,8 @@ color: white;
 
 li a {
 display: block;
-width: 60px;
-background-color: #221f1f;
+width: inherit;
+background-color: #461919;
 }
 navigation{
     width: 100%;

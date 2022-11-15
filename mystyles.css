@@ -17,34 +17,34 @@ body {
 
 aside {
     grid-area: sidebar;
-    background-color: #007FFF;
+    background-color: #444444;
 }
 
 header {
     grid-area: header;
-    background-color: #91C8FF;
+    background-color: #888888;
 }
 
 section:nth-of-type(1) {
     grid-area: sect1;
-    background-color: #B3D8FD;
+    background-color: #fefefe;
 }
 section:nth-of-type(2) {
     grid-area: sect2;
-    background-color: #5E86AF;
+    background-color: #fdfdfd;
 }
 section:nth-of-type(3) {
     grid-area: sect3;
-    background-color: #6D9FD2;
+    background-color: #fcfcfc;
 }
 main {
     grid-area: main;
-    background-color: #7DA9D5;
+    background-color: #ffffff;
 }
 
 footer {
     grid-area: footer;
-    background-color: #588EC3;
+    background-color: #666666;
 }
 
 @media only screen and (min-width: 768px) {

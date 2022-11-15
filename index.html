@@ -32,8 +32,12 @@
    grid-area: right;
 }
 .cell-5 {
-   background: blueviolet;
-   grid-area: footer;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-column-gap: 1rem;
+}
+.cell-5 .cell {
+   background-color: coral;
 }
 .cell {
    color: white;

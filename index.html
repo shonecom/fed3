@@ -5,61 +5,51 @@
  <title>My first page</title>
 <style>
 .container {
-  height: 100vh;
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px 10px;
-}
-.cell {
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  padding: 2rem;
+   height: 90vh;
+   width: 90vw;
+   margin: 2rem auto;
+   display: grid;
+   grid-template-areas: "header header header"
+                        "left main right"
+                        "footer footer footer";
+   grid-template-rows: 1fr 3fr 1fr;
+   grid-template-columns: 1fr 2fr 1fr;
 }
 .cell-1 {
-  grid-row: 1;
-  grid-column: 1/4;
-  background: deepskyblue;
+   background: deepskyblue;
+   grid-area: header;
 }
 .cell-2 {
-  background: orangered;
+   background: orangered;
+   grid-area: left;
 }
 .cell-3 {
-  background: royalblue;
+   background: limegreen;
+   grid-area: main;
 }
 .cell-4 {
-  background: gold;
+   background: gold;
+   grid-area: right;
 }
 .cell-5 {
-  background: blueviolet;
+   background: blueviolet;
+   grid-area: footer;
 }
-.cell-6 {
-  background: limegreen;
-}
-.cell-7 {
-  background: coral;
-}
-.cell-8 {
-  background: lightseagreen;
-}
-.cell-9 {
-  background: maroon;
+.cell {
+   color: white;
+   font-size: 2.5rem;
+   text-align: center;
+   padding: 4rem;
 }
 </style>
 </head>
 <body>
-  <div class="container">
-  <div class="cell cell-1">block 1</div>
-  <div class="cell cell-2">block 2</div>
-  <div class="cell cell-3">block 3</div>
-  <div class="cell cell-4">block 4</div>
-  <div class="cell cell-5">block 5</div>
-  <div class="cell cell-6">block 6</div>
-  <div class="cell cell-7">block 7</div>
-  <div class="cell cell-8">block 8</div>
-  <div class="cell cell-9">block 9</div> 
+<div class="container">
+  <header class="cell cell-1">Header</header>
+  <aside class="cell cell-2">Left sidebar</aside>
+  <main class="cell cell-3">Main content</main>
+  <aside class="cell cell-4">Right sidebar</aside>
+  <footer class="cell cell-5">Footer</footer>
 </div>
 </body>
 </html>

@@ -25,6 +25,12 @@ header {
     background-color: #888888;
 }
 
+header nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
 section:nth-of-type(1) {
     grid-area: sect1;
     background-color: #fefefe;
@@ -40,6 +46,7 @@ section:nth-of-type(3) {
 main {
     grid-area: main;
     background-color: #ffffff;
+    height: 1500px;
 }
 
 footer {
